@@ -4,7 +4,7 @@
 ## 1차 수업 레포지토리 입니다.
 <br>
 
-#### 해당 수업은 step1에 해당하며 html, css, js, ajax, jquery, java 수업을 수강합니다.
+#### 본 repository는 step1에 해당하며 html, css, js, ajax, jquery, java 수업을 수강합니다.
 
 <a href="https://docs.google.com/spreadsheets/d/1HG_dOJp-P5N16dK5TnKN7ECE8K1BvNeQz3_8bXNce9w/edit#gid=89749885">수업 커리큘럼</a><br>
 
