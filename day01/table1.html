@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<!-- doctype 소문자로 써도 됨
+!의 뜻은 선언을 한다는 뜻임. 이 파일의 타입은 html이라는 뜻 
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>테이블 생성</h1>
+    <!-- border로 테이블 선을 그려줌 -->
+    <table border="1">
+        <tr bgcolor="yellow">
+            <th bgcolor="red">@@@@@@</th>
+            <th>칸 2</th>
+            <th>칸 3</th>
+        </tr>
+        <tr>
+            <td bgcolor="#e3df74">!!!!</td>
+            <td>칸 2</td>
+            <td>칸 3</td>
+        </tr>
+    </table>
+    <br><br>
+    <h1>테이블 2</h1>
+    <table border="1">
+        <tr>
+            <th colspan="3">Table Data1</th>
+            <th rowspan="3">Table Data2</th>
+        </tr>
+        <tr>
+            <td>Table Data3</td>
+            <td rowspan="2">Table Data4</td>
+            <td>Table Data5</td>
+        </tr>
+        <tr>
+            <td>data6</td>
+            <td>data7</td>
+        </tr>
+    </table>
+    <br><br>
+    <h1>테이블 3</h1>
+    <table border="1">
+        <tr>
+            <th colspan="3">컬럼 3개 합침</th>
+            <th rowspan="3">로우 3개 합칩</th>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td rowspan="2">6 + 10</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+</html>
