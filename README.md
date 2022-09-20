@@ -11,17 +11,10 @@
 
 <br>
 <h1>repository</h1>
-<tabel>
+<table>
   <tr><th>디렉터리명</th><th>내용</th></tr>
   <tr><td>day1및git_day1</td><td>html</td></tr>
 </table>
   
-<table>
-  <tr><th>title</th><th>contents</th></tr>
-  <tr><td>html</td><td>data.</td></tr>
-  <tr><td>css</td><td>sytle.</td></tr>
-  <tr><td>js</td><td>process.</td></tr>
-  <tr><td>java.</td><td>backend.</td></tr>
-</table>
 
 #### .md 는 markdown 파일 확장자를 뜻합니다. 
