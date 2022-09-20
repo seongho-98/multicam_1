@@ -14,6 +14,7 @@
 <table>
   <tr><th>디렉터리명</th><th>내용</th></tr>
   <tr><td>day1및 git_day1</td><td>html</td></tr>
+  <tr><td>day2</td><td>css 및 bootstrap</td></tr>
 </table>
   
 
