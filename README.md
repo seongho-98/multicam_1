@@ -9,5 +9,17 @@
 <br>
 <img src="https://event.multicampus.com/backend/images/promotion/PR010149/pc/visual-06.png">
 
+<br>
+##수업경과
+<tabel>
+  <tr>
+    <th>디렉터리명</th>
+    <th>내용</th>
+   </tr>
+   <tr>
+    <td>day1및git_day1</td>
+    <td>html</td>
+    </tr>
+   </table>
 
-#### .md 는 markdown 파일 확장자를 뜻합니다.
+#### .md 는 markdown 파일 확장자를 뜻합니다. 
