@@ -12,15 +12,9 @@
 <br>
 <h1>repository</h1>
 <tabel>
-  <tr>
-    <th>디렉터리명</th>
-    <th>내용</th>
-   </tr>
-   <tr>
-    <td>day1및git_day1</td>
-    <td>html</td>
-    </tr>
-  </table>
+  <tr><th>디렉터리명</th><th>내용</th></tr>
+  <tr><td>day1및git_day1</td><td>html</td></tr>
+</table>
   
 <table>
   <tr><th>title</th><th>contents</th></tr>
