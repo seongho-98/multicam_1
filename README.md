@@ -9,7 +9,5 @@
 <a href="https://docs.google.com/spreadsheets/d/1HG_dOJp-P5N16dK5TnKN7ECE8K1BvNeQz3_8bXNce9w/edit#gid=89749885">수업 커리큘럼</a><br>
 
 
-<img src="https://event.multicampus.com/backend/images/promotion/PR010149/pc/visual-06.png">
-
 
 #### .md 는 markdown 파일 확장자를 뜻합니다.
