@@ -13,7 +13,7 @@
 <h1>repository</h1>
 <table>
   <tr><th>디렉터리명</th><th>내용</th></tr>
-  <tr><td>day1및git_day1</td><td>html</td></tr>
+  <tr><td>day1및 git_day1</td><td>html</td></tr>
 </table>
   
 
