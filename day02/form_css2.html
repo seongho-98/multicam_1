@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        p {
+            background: aquamarine;
+        }
+        form table tr td{
+            background :chocolate;
+            color : black;
+        }
+        input[type=submit]{
+            background:crimson;
+        }
+        input{
+            text-align : center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h3>로그인 화면</h3>
+        <table border="1">
+            <tr align="center">
+                <td>아이디</td>
+                <td><input type="text" name="id" id="find"></td>
+            </tr>
+
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">전송</button>
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    <form action="#">
+        <h3>회원가입</h3>
+        <table border="1">
+            <tr align="center">
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="join_id">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>비밀번호</td>
+                <td>
+                    <input type="password" name="join_pw">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>이름</td>
+                <td>
+                    <input type="text" name="join_name">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    성별
+                </td>
+                <td>
+                    <input type="radio" name="sex" value="man">남
+                    <input type="radio" name="sex" value="woman">여
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="runing">달리기
+                    <input type="checkbox" name="hobby2" value="video_watching">동영상 보기
+                    <input type="checkbox" name="hobby3" value="searching">인터넷 서핑
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2">
+                    <textarea name="text" cols="40" rows="10" placeholder="기타 요청사항"></textarea>
+                </td>
+            </tr>
+            
+            <tr align="center">
+                <td colspan="2">
+                    <button type="submit">회원가입</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>
+        안녕하세요 <br>css 를 내부 스타일 시트로 적용해보도록 하겠습니다.
+    </p>
+    <input type="submit" value="내부 스타일 시트로 버튼 input으로 만든 버튼 꾸며보기">
+</body>
+
+</html>

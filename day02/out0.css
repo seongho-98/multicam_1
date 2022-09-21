@@ -1,0 +1,44 @@
+body{
+    background : thistle;
+    color : green;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    color : purple;
+}
+
+input{
+    background : silver;
+    font-family:'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: #4CAF50;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+textarea{
+    border-radius: 12px;
+    background : silver;
+}
+
+#find {
+    background : hotpink;
+    border-color : black;
+}
+
+.login {
+    background : red;
+}
+
+.radio {
+    accent-color:red;
+}
+
+#run {
+    accent-color:red;
+}

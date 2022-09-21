@@ -1,0 +1,20 @@
+body{
+    background : plum;
+}
+
+#center{
+    padding-top : 100px;
+}
+.tbl_head{
+    background:blueviolet;
+    
+}
+
+tr{
+    background : antiquewhite;
+    font-weight: bold;
+}
+
+.input{
+    background: hotpink;
+}

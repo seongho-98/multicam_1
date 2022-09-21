@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCustom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        #search{
+            position:fixed;
+            right: 5px;
+            top: 5px;
+        }
+        #loginform form {
+            width: 800px;
+            margin: 0 auto;
+
+        }
+        #membertable table{
+            width : 1000px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .table-striped{
+            align-content: center;
+        }
+
+        #nav ul li{
+            list-style: none;
+            float: left;
+            margin-right: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- input, button, table 하나씩 적용해보기 -->
+
+
+
+    <div id="total">
+        
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li><a href="#">홈으로</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">공식홈페이지</a></li>
+                </ul>
+            </div>
+            <div id="search">
+                <form class="form-inline" action="/action_page.php" >
+                    검색 &nbsp;
+                    <input type="text" class="form-control" placeholder="검색어 입력" name="search">
+                    
+                    &nbsp;<button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+        <div>Hello</div>
+        <hr>
+        <div id="loginform">
+            <h2>로그인</h2>
+            <form action="#" style="padding:50px;">
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <button class="btn btn-primary">로그인</button>
+            </form>
+        </div>
+        <hr>
+        <div id="membertable">
+            <h2>회원목록</h2>
+            <table class="table-striped" border = "1px">
+                <tr>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>주소</th>
+                </tr>
+                <tr>
+                    <td>hong12</td>
+                    <td>홍구래</td>
+                    <td>서울시강남구</td>
+                </tr>
+                <tr>
+                    <td>kim99</td>
+                    <td>김구구</td>
+                    <td>창원시</td>
+                </tr>
+                <tr>
+                    <td>mong09</td>
+                    <td>나몽키</td>
+                    <td>강원도 원주</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

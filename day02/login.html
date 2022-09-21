@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 연습</title>
+    <style>
+        input:disabled{
+            background-color: antiquewhite;
+        }
+        input:focus{
+            background-color: red;
+        }
+        button:hover{
+            color : red;
+            background-color: aqua;
+            font-weight: bold;
+        }
+        /* 속성성택자 */
+        input[type = text]{
+            background: red;
+            color : wheat;
+            font-size: 20px;
+        }
+        input[type = password]{
+            background : greenyellow;
+            color : blue;
+        }
+
+        img[src $= png]{
+            border : 10px solid red;
+        }
+        img[src $= jpeg]{
+            border : 20px dotted violet;
+        }
+        img[src $= gif]{
+            border : 20px double blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="id">아이디</label>
+        <input type="text" id="id" name="id" disabled> <br>
+        <label for="pw">비번</label>
+        <input type="password" id="pw" name="password"> <br>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name">
+        <button>버튼</button>
+
+        <hr>
+        <img src="./git/day02/img/red.jpeg" width="300px" height="200px"> <br>
+        <img src="./git/day02/img/red.png"width="300px" height="200px"> <br>
+        <img src="./git/day02/img/giphy.gif"width="300px" height="200px"> <br>
+
+    </form>
+</body>
+</html>

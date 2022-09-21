@@ -1,0 +1,60 @@
+<!-- page9.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li{
+            list-style: none;
+            float:left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+        /* ul의 li가 child 임.. li가 몇 번째 child인지를 지정하는 것임. */
+        li:nth-child(2n){
+            background: orange;
+        }
+
+        li:nth-child(2n+1){
+            background-color: yellow;
+        }
+
+        li:first-child{
+            border-radius: 50px 0px 0px 50px
+        }
+
+        li:last-child{
+            border-radius:0px 50px 50px 0px
+        }
+        a{
+            text-decoration: none;
+            color : red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="border-radius: 50px 0px 0px 50px;">
+            <a href="page4.html">회원가입</a>
+        </li>
+        <li>
+            <a href="page5.html">제품정보</a>
+        </li>
+        <li>
+            <a href="page6.html">게시판</a>
+        </li>
+        <li style="border-radius:0px 50px 50px 0px">
+            <a href="page7.html">장바구니</a>
+        </li>
+    </ul>
+</body>
+</html>

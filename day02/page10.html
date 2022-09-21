@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul>li{
+            list-style: none;
+            float:left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+        /* ul의 li가 child 임.. li가 몇 번째 child인지를 지정하는 것임. */
+        li:nth-child(2n){
+            background: orange;
+        }
+
+        li:nth-child(2n+1){
+            background-color: yellow;
+        }
+
+        li:first-child{
+            border-radius: 50px 0px 0px 50px
+        }
+
+        li:last-child{
+            border-radius:0px 50px 50px 0px
+        }
+        a{
+            text-decoration: none;
+            color : red;
+            font-weight: bold;
+        }
+        /* nth-pract.html에서 가져옴 */
+
+
+        div{
+            font-size : 15px;
+            font-weight: bold;
+            color : blue;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background-color: burlywood;
+            border : 5px solid black;
+           
+            
+        }
+        #top1{
+            width: 800px;
+            margin : 0;
+            height: 100px;
+            background-color: aquamarine;
+            padding:2px;
+
+            
+        }
+        #center{
+            width: 800px;
+            height: 500px;
+            
+            background-color: red;
+        }
+
+        #top2{
+            width: 200px;
+            height: 100px;
+            border-radius: 50px 0px;
+            color:yellow;
+            background-color: black;
+            position : fixed;            
+            top : 5px;
+            right: 5px;
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+    <div id="total">
+        <div id="top1">
+            <ul>
+                <li><a href="member.html">회원가입</a></li>
+                <li><a href="product.html">제품정보</a></li>
+                <li><a href="bbs.html">게시판</a></li>
+                <li><a href="basket.html">장바구니</a></li>
+            </ul>
+        </div>
+
+        <div id="top2">
+            고정된 화면이 보이는 부분
+        </div>
+
+        
+
+        <div id="center">
+            <table border="1">
+                <tr>
+                    <td>1</td>
+                    <td>포테이토</td>
+                    <td>후라이드 포테이토</td>
+                    <td>1000원</td>
+                    <td><img src="./git/day02/img/sing.png" style="width: 100px; height:70px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>포테이토</td>
+                    <td>후라이드 포테이토</td>
+                    <td>1000원</td>
+                    <td><img src="./git/day02/img/sing.png" style="width: 100px; height:70px"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

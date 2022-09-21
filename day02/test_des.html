@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* div > p{
+            background-color: red;
+        }  모든 div 아래의 p가 선택됨 */
+
+        #d1 > p {
+            background-color: aqua;
+        }
+        #d2 p {
+            background-color: pink;
+        }
+
+        #d2>div>p {
+            font-weight: bold;
+            color : red;
+        }
+        #d2>p{
+            font-size:30px;
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "d1">
+        <p>감자1</p>
+        <div>
+            <p>감자2</p>
+            <p>고구마</p>
+        </div>
+    </div>
+    <div id="d2">
+        <p>감자3</p>
+        <div>
+            <p>감자4</p>
+            <p>고구마2</p>
+        </div>
+    </div>
+    
+</body>
+</html>

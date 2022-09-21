@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보사이트</title>
+    <link rel="stylesheet" href="out0.css">
+
+    <style>
+        ul>li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        /* ul의 li가 child 임.. li가 몇 번째 child인지를 지정하는 것임. */
+        li:nth-child(2n) {
+            background: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+
+        li:first-child {
+            border-radius: 50px 0px 0px 50px
+        }
+
+        li:last-child {
+            border-radius: 0px 50px 50px 0px
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* nth-pract.html에서 가져옴 */
+
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #total {
+            width: 800px;
+            height: 800px;
+            background-color: burlywood;
+            border: 5px solid black;
+
+
+        }
+
+        #top1 {
+            width: 800px;
+            margin: 0;
+            height: 100px;
+            background-color: aquamarine;
+            padding: 2px;
+
+
+        }
+
+        #center {
+            width: 800px;
+            height: 500px;
+
+            background-color: red;
+        }
+
+        #top2 {
+            width: 200px;
+            height: 100px;
+            border-radius: 50px 0px;
+            color: yellow;
+            background-color: black;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+
+
+        p {
+            background: aquamarine;
+        }
+
+        form table tr td {
+            background: chocolate;
+            color: black;
+        }
+
+        input[type=submit] {
+            background: crimson;
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="total">
+        <div id="top1">
+            <ul>
+                <li><a href="member.html">회원가입</a></li>
+                <li><a href="product.html">제품정보</a></li>
+                <li><a href="bbs.html">게시판</a></li>
+                <li><a href="basket.html">장바구니</a></li>
+            </ul>
+        </div>
+
+        <div id="top2">
+            고정된 화면이 보이는 부분
+        </div>
+
+
+
+        <div id="center">
+            <form action="#">
+                <h3>회원가입</h3>
+                <table border="1">
+                    <tr align="center">
+                        <td>아이디</td>
+                        <td>
+                            <input type="text" name="join_id">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>비밀번호</td>
+                        <td>
+                            <input type="password" name="join_pw">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>이름</td>
+                        <td>
+                            <input type="text" name="join_name">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            성별
+                        </td>
+                        <td>
+                            <input type="radio" name="sex" value="man">남
+                            <input type="radio" name="sex" value="woman">여
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>취미</td>
+                        <td>
+                            <input type="checkbox" name="hobby1" value="runing">달리기
+                            <input type="checkbox" name="hobby2" value="video_watching">동영상 보기
+                            <input type="checkbox" name="hobby3" value="searching">인터넷 서핑
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td colspan="2">
+                            <textarea name="text" cols="40" rows="10" placeholder="기타 요청사항"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td colspan="2">
+                            <button type="submit">회원가입</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
