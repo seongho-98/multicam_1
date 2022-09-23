@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글기능 활용해보기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn-img").click(function () {
+                $("#result").append('<img width="160px" height="80px" src="./git/day04/img/red.jpeg"> <br>')
+                let form_data = new FormData()
+            })
+            $("#btn-text").click(function () {
+                text_val = $("#input1").val()
+
+                $("#result").append("<span  style='color:darkblue; font-size:15px; font-weight: bold;'>" + text_val + "</span><br>")
+            })
+            $("#btn-total").click(function () {
+                text2_val = $("#input2").val()
+                $("#result").append('')
+                $("#result").append("<span style='color:darkblue; font-size:15px; font-weight: bold;'><img width='160px' height='80px' src='./git/day04/img/red.jpeg'>" + text2_val + "</span><br>")
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <button id="btn-img">이미지 추가</button> <br>
+
+    댓글 1 : <input type="text" id="input1"><button id="btn-text">댓글 추가</button> <br>
+    댓글 2 : <input type="text" id="input2"><button id="btn-total">이미지 + 댓글 추가</button><br>
+    <hr style="height: 1px; background-color : red">
+
+    <div id="result"></div>
+</body>
+
+</html>

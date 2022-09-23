@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외부 ajax 연습</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#b1').click(function(){
+                $.ajax({
+                    url:"/msn",
+                    success : function(data){
+                        alert('네이트 연결 성공')
+                        $("#result").html(data)
+                    },
+                    error : function(){
+                        alert('실패')
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="b1">name</button>
+    <div id="result"></div>
+</body>
+</html>

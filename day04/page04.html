@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Dialog - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog(); //dialog 함수는 jquery-ui.js에 정의되어있음.
+        });
+
+
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="dialog" title="점심시간" style="background-color: pink;">
+        <p>12~13시 까지 점심 시간입니다</p>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>문의</b>
+                </td>
+                <td>
+                    010-222-222
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>찾아오시는곳</b>
+                </td>
+                <td>
+                    서울시 강남구
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="accordion">
+        <h3>about me</h3>
+        <div>
+            <p>
+                나에 대한 소개
+            </p>
+        </div>
+        <h3>spec</h3>
+        <div>
+            <p>
+                스킬 툴에 대해 쓰세요
+            </p>
+        </div>
+        <h3>hobby</h3>
+        <div>
+            <p>
+                취미를 쓰세요
+            </p>
+            <ul>
+                <li>게임</li>
+                <li>독서</li>
+                <li>자전거</li>
+            </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+            </p>
+            <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

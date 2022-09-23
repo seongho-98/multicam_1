@@ -1,0 +1,7 @@
+ $('#random').onclick(function(){
+        r = Math.random() * 256
+        g = Math.random() * 256
+        b = Math.random() * 256
+
+
+    }),

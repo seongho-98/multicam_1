@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>Insert title here</title>
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+       <script type="text/javascript">
+           $(function() {
+               $('button').click(function() {
+                   var IMP = window.IMP; // 생략가능
+                   IMP.init('iamport'); // 'iamport' 대신 부여받은 "가맹점 식별코드"를 사용
+
+                   //request_pay는 iamport에서 제공하는 함수임. iamport 결제 창이 뜸. 흔히 보던 웹 결제 창이었다.
+                   IMP.request_pay({
+                       pg : 'inicis', // version 1.1.0부터 지원.
+                       pay_method : 'card',
+                       merchant_uid : 'merchant_' + new Date().getTime(),
+                       name : $("#name").val(),
+                       amount : $("#money").val(), //돈
+                       buyer_email : 'iamport@siot.do',
+                       buyer_name :  $("#buyer_name").val(),
+                       buyer_tel : $("#buyer_tel").val(), 
+                       buyer_addr : '서울특별시 강남구 삼성동', //주소
+                       buyer_postcode : '123-456',
+                       m_redirect_url : 'www.yourdomain.com/payments/complete'
+               }, function(rsp){    //성공했을 때의 메세지 내용
+                   if ( rsp.success ) {
+                       var msg = '결제가 완료되었습니다.';
+                       msg += '고유ID : ' + rsp.imp_uid;
+                       msg += '상점 거래ID : ' + rsp.merchant_uid;
+                       msg += '결제 금액 : ' + rsp.paid_amount;
+                       msg += '카드 승인번호 : ' + rsp.apply_num;
+                   } else {
+                       var msg = '결제에 실패하였습니다.';
+                       msg += '에러내용 : ' + rsp.error_msg;
+                   }
+                   alert(msg);
+               });
+               })
+           })
+</script>
+   </head>
+   <body>
+        결제금액 : <input type="text" id="money"> <br>
+        상품명 : <input type="text" id="name"> <br>
+        구매자 이름 : <input type="text" id="buyer_name"> <br>
+        구매자 폰번호 : <input type="text" id="buyer_tel"> <br>
+       <button type="button">결제하기</button>
+
+       <!-- form으로 입력받은 것들이 IMP.request_pay에 들어가게 되며, 정상적인 결제를 하게 되면 requset_pay 데이터 정보를 바탕으로 결제가 된다. -->
+   </body>
+</html>

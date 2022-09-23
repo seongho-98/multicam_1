@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page03</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#b1').click(function(){
+                id_val = $('#id').val()
+
+                if(id_val.length < 5){
+                    //$('#result').html('<span style="color:red">5글자 미만</span>')
+                    $('#result').append('<span style="color:red">5글자 미만</span><br>')
+
+                }else{
+                    $('#result').html('<span style="color:blue">ID OK</span>')
+                }
+            })
+
+            $('#b2').click(function(){
+                
+                pw1_val = $('#pw1').val()
+                pw2_val = $('#pw2').val()
+
+                if(pw1_val != pw2_val){
+                    $('#result').append('<span style="color:red">비번 불일치</span><br>')
+                }else{
+                    $('#result').html('<span style="color:blue">비번 OK</span><br>')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>Jquery 테스트</h2>
+    <hr>
+    아이디 : <input type="text" id="id"  value="test"> <br>
+    <button id="b1">아이디 글자 수 체크</button> <br>
+    비번1 : <input type="password" id="pw1"  value="test1"> <br>    
+    비번2 : <input type="password" id="pw2"  value="test2"> <br>
+    <button id="b2">비번 일치 체크</button>    
+    <hr>
+    <div id="result"></div>
+</body>
+</html>

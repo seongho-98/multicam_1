@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax에서_ok류들과</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#b1").click(function(){
+                //비동기 통신
+                $.ajax({
+                    url : 'http://127.0.0.1:5500/day04/ok_tour.html',
+                    success : function(data){
+                        alert('tour 통신 성공!! 넘어온 data : '+data)
+                    },
+                    error : function(error){
+                        alert('tour 통신 실패... 넘어온 error : ' + error)
+                    }
+                })    
+            })
+            $("#b2").click(function(){
+                //비동기 통신
+                $.ajax({
+                    url : 'http://127.0.0.1:5500/day04/ok2.html',
+                    success : function(data){
+                        alert('ok 통신 성공!! 넘어온 data : '+data)
+                    },
+                    error : function(error){
+                        alert('ok 통신 실패... 넘어온 error : ' + error)
+                    }
+                })    
+            })
+            $("#b3").click(function(){
+                //비동기 통신
+                $.ajax({
+                    url : 'http://127.0.0.1:5500/day04/ok_weather.html',
+                    success : function(data){
+                        //alert('weather 통신 성공!! 넘어온 data : '+data)
+                        $("#result").html("<table><tr><td>지역</td><td>"+data.split(',')[0]+"</tr></table>")
+                    },
+                    error : function(error){
+                        alert('weather 통신 실패... 넘어온 error : ' + error)
+                    }
+                })    
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+   
+    <button id="b1">서버 내 공공 ok_tour 통신</button>
+    <button id="b2">서버 내 공공 ok.html 통신</button>
+    <button id="b3">서버 내 공공 ok_weather.html 통신</button>
+    <div id="result"></div>
+</body>
+</html>
