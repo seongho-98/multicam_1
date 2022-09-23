@@ -15,6 +15,8 @@
   <tr><th>디렉터리명</th><th>내용</th></tr>
   <tr><td>day1및 git_day1</td><td>html</td></tr>
   <tr><td>day2</td><td>css 및 bootstrap</td></tr>
+  <tr><td>day3</td><td>JS</td></tr>
+  <tr><td>day4</td><td>Jquery, Ajax</td></tr>
 </table>
   
 
