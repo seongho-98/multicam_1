@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login처리</title>
+    <script>
+        function id_ch() {
+            
+            _id = document.getElementById("id").value
+
+            if (_id.length <= 5) {
+                fail.innerHTML = '아이디 글자수 6자 이상'
+            }
+        }
+
+        function pw_ch() {
+            pw = document.getElementById("pw1").value
+            pw2 = document.getElementById("pw2").value
+
+            if (pw != pw2) {
+                fail.innerHTML = '<font color = red>일치하지 않음</font>'
+            } else {
+                document.getElementById('succ').innerHTML = '<font color = blue>일치함</font>'
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <hr>
+    아이디 <input type="text" id="id"> <button type="button" onclick="id_ch()">글자수 체크</button> <br>
+    패스워드 <input type="text" id="pw1"> <br>
+    패스워드 확인 <input type="text" id="pw2"> <button type="button" onclick="pw_ch()">비번 체크</button>
+    <div id="fail" style="background-color: yellow;"></div>
+    <div id="succ"></div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Google Map</title>
+</head>
+
+<body>
+    <div id="map" style="width: 500px; height: 500px;"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxF9p0e18rdjf1MXyTVK3evaKUeRXmFG0&callback=initMap&region=kr"></script>
+    <script>
+        var map;
+
+        function initMap() {
+            
+            //구글 지도에서 위도 경도를 뽑아와서 넣어주면 됨
+            //위치를 선택하고 url을 살펴보면 됨.
+            // url : ~~ !3d35.1348103!4d129.1030291
+            // 위도 : 35.1348103
+            // 경도 : 129.1030291
+
+            //37.5705805429368, 126.99212654046664
+            comments = ['부경대', '누리관', '집']   //검색할 지역
+            
+            //lats = [ 35.1348103, 35.1350472, 35.1321174 ] //위도
+            //lngs = [ 129.1030291, 129.1049388, 129.0958057 ]   //경도
+                //이건 왜 안되지 ㅠ./ 출발지 설정으로 위도 경도를 따왔었음
+
+            //lats = [ 35.1348103]
+            //lngs = [ 129.1030291]
+            
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom : 12,
+                center : {
+                        lat : 37.5642135,
+                        lng : 127.0016985
+                    }
+            });
+            
+            for (var i = 0; i < 3; i++) {
+                var site = {
+                    lat : lats[i],
+                    lng : lngs[i]
+                };
+
+                new google.maps.Marker({
+                    position : site,
+                    map : map,
+                    label : comments[i]
+                });
+            }
+        }
+    </script>
+</body>
+</html>
