@@ -18,6 +18,7 @@
   <tr><td>day4</td><td>Jquery, Ajax</td></tr>
   <tr><td>java_1</td><td>변수, 연산자, 제어문</td></tr>
   <tr><td>java02</td><td>반복, 조건, 순차</td></tr>
+  <tr><td>java03</td><td>배열</td></tr>
 </table>
   
 
