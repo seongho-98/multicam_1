@@ -19,6 +19,9 @@
   <tr><td>java_1</td><td>변수, 연산자, 제어문</td></tr>
   <tr><td>java02</td><td>반복, 조건, 순차</td></tr>
   <tr><td>java03</td><td>배열</td></tr>
+  <tr><td>java04</td><td>클래스</td></tr>
+  <tr><td>java05</td><td>생성자, static</td></tr>
+  <tr><td>java06</td><td>상속, 스레드</td></tr>
 </table>
   
 
